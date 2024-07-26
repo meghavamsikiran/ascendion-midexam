@@ -123,7 +123,7 @@ public class BankAccountDaoImpl implements BankAccountDao {
 	    Query query = em.createQuery("select b.actNumber, b.customerName, b.city from BankAccount b group by b.actNumber, b.customerName, b.city");
 	    List<Object[]> list = query.getResultList();
 	    for(Object[] obj : list) {
-	        System.out.println("actNumber" + obj[0] + "\n customerName: " + obj[1] + "\n City: " + obj[2]);
+	        System.out.println("actNumber" + obj[0] + "\ncustomerName: " + obj[1] + "\nCity: " + obj[2]);
 	    }
 	    em.close();
 	}
