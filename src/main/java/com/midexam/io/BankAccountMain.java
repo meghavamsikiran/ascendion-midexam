@@ -3,13 +3,14 @@ package com.midexam.io;
 import java.util.Scanner;
 
 import com.midexam.entity.BankAccount;
+import com.midexam.exception.InputMismatchException;
 import com.midexam.service.BankAccountService;
 import com.midexam.service.BankAccountServiceImpl;
 
 public class BankAccountMain {
 	static Scanner sc = null;
 	static BankAccountService bankAccountService=null;
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InputMismatchException {
 		sc = new Scanner(System.in);
 		
 		System.out.println("1. Create Account");
